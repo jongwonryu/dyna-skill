@@ -1,0 +1,3 @@
+# The original research scripts use the pre-1.0 ChatCompletion API.
+openai==0.28.1
+tqdm>=4.66,<5

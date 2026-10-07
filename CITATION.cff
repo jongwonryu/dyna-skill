@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this research code, please cite the paper below."
+title: "DYNA-SKILL research code"
+type: software
+authors:
+  - family-names: Ryu
+    given-names: Jongwon
+  - family-names: Kim
+    given-names: Mingi
+  - family-names: Kim
+    given-names: Junyeong
+repository-code: "https://github.com/jongwonryu/dyna-skill"
+preferred-citation:
+  type: article
+  title: "DYNA-SKILL: Dynamic Self-Prompting Knowledge Graphs for Improving Logical Reasoning in Language Models"
+  authors:
+    - family-names: Ryu
+      given-names: Jongwon
+    - family-names: Kim
+      given-names: Mingi
+    - family-names: Kim
+      given-names: Junyeong
+  journal: IEEE Access
+  volume: "13"
+  start: "188326"
+  end: "188334"
+  year: 2025
+  doi: "10.1109/ACCESS.2025.3626479"

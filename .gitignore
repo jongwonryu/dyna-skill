@@ -1,0 +1,13 @@
+.venv/
+.env
+.env.*
+__pycache__/
+*.py[cod]
+state.json
+additional_tail_state.json
+example.json
+example_updated.json
+example_triples.json
+cleaned_triples.json
+converted_text_data.txt
+outputs/

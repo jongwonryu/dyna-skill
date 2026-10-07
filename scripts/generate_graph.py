@@ -5,7 +5,10 @@ import re
 import os
 import time
 # OpenAI API 키 설정
-openai.api_key = ''
+openai.api_key = os.environ.get("OPENAI_API_KEY")
+if not openai.api_key:
+    raise SystemExit("Set OPENAI_API_KEY before running generation.")
+MODEL = os.environ.get("OPENAI_MODEL", "gpt-4-turbo")
 
 head_category = {
     "Social-Interaction Relations": [
@@ -359,7 +362,7 @@ def generate_text(prompt, max_retries=5):
     for attempt in range(max_retries):
         try:
             response = openai.ChatCompletion.create(
-                model="gpt-4-turbo",
+                model=MODEL,
                 messages=[
                     {"role": "system", "content": "You are a helpful assistant."},
                     {"role": "user", "content": prompt}
